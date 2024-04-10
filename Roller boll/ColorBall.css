@@ -1,0 +1,48 @@
+body {
+    margin: 0px;
+}
+
+.horizontal-line {
+    height: 300px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.colorBall-styles {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 205px;
+    animation: mymove 5s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes mymove {
+    0% {
+        left: 0px;
+        background: red;
+    }
+
+    50% {
+        left: 45%;
+        background: orange;
+    }
+
+    100% {
+        left: 85.3%;
+        background: green;
+    }
+
+    /* 50% {
+        right: 45%;
+        background: orange;
+    }
+
+    0% {
+        right: 0px;
+        background: red;
+    } */
+}
